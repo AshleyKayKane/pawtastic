@@ -1,0 +1,77 @@
+.offAC {
+  position: fixed;
+  bottom: 0;
+  z-index: $zindex-offAC;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  color: $offAC-color;
+  visibility: hidden;
+  background-color: $offAC-bg-color;
+  background-clip: padding-box;
+  outline: 0;
+  @include box-shadow($offAC-box-shadow);
+  @include transition(transform $offAC-transition-duration ease-in-out);
+}
+
+.offAC-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $offAC-padding-y $offAC-padding-x;
+
+  .btn-close {
+    padding: ($offAC-padding-y / 2) ($offAC-padding-x / 2);
+    margin: ($offAC-padding-y / -2) ($offAC-padding-x / -2) ($offAC-padding-y / -2) auto;
+  }
+}
+
+.offAC-title {
+  margin-bottom: 0;
+  line-height: $offAC-title-line-height;
+}
+
+.offAC-body {
+  flex-grow: 1;
+  padding: $offAC-padding-y $offAC-padding-x;
+  overflow-y: auto;
+}
+
+.offAC-start {
+  top: 0;
+  left: 0;
+  width: $offAC-horizontal-width;
+  border-right: $offAC-border-width solid $offAC-border-color;
+  transform: translateX(-100%);
+}
+
+.offAC-end {
+  top: 0;
+  right: 0;
+  width: $offAC-horizontal-width;
+  border-left: $offAC-border-width solid $offAC-border-color;
+  transform: translateX(100%);
+}
+
+.offAC-top {
+  top: 0;
+  right: 0;
+  left: 0;
+  height: $offAC-vertical-height;
+  max-height: 100%;
+  border-bottom: $offAC-border-width solid $offAC-border-color;
+  transform: translateY(-100%);
+}
+
+.offAC-bottom {
+  right: 0;
+  left: 0;
+  height: $offAC-vertical-height;
+  max-height: 100%;
+  border-top: $offAC-border-width solid $offAC-border-color;
+  transform: translateY(100%);
+}
+
+.offAC.show {
+  transform: none;
+}

@@ -1,0 +1,66 @@
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: AC
+    Theme URI: http://themes.semicolonweb.com/html/AC
+    Description: The Multi-Purpose Template
+    Author: SemiColonWeb
+    Author URI: http://themeforest.net/user/semicolonweb
+    Version: 6.4.2
+
+    SASS Stylesheet
+
+-----------------------------------------------------------------------------------*/
+
+// Initialize
+@import "variables";
+@import "mixins";
+
+// Bootstrap
+@import "bootstrap/bootstrap";
+
+// Core CSS
+@import "layouts";
+@import "typography";
+@import "utilities";
+@import "temp";
+
+
+// Content Blocks
+@import "topbar";
+@import "header";
+@import "sliders";
+@import "pagetitle";
+@import "content";
+@import "portfolio";
+@import "blog";
+@import "shop";
+@import "events";
+
+
+// Shortcodes
+@import "shortcodes";
+
+// Forms
+@import "forms";
+
+// Footer
+@import "footer";
+
+
+// Widgets
+@import "widgets";
+
+// Paginations
+@import "paginations";
+
+// Extras
+@import "extras";
+
+// Page Loaders
+@import "page-loaders";
+
+// RTL Template
+@import "style-rtl";
+
+// Dark
+@import "dark";
